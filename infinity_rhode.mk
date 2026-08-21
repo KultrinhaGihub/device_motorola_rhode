@@ -13,6 +13,10 @@ $(call inherit-product, device/motorola/rhode/device.mk)
 # Inherit some common Project Infinity X stuff.
 $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
+# Project Infinity X configs
+INFINITY_MAINTAINER := Kultrinhaa_
+WITH_GAPPS := false
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := infinity_rhode
 PRODUCT_DEVICE := rhode
