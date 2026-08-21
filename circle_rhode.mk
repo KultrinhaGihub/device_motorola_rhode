@@ -10,11 +10,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device
 $(call inherit-product, device/motorola/rhode/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Project CiRCLE stuff.
+$(call inherit-product, vendor/circle/config/common_full_phone.mk)
+
+# Project CiRCLE configs
+CIRCLE_MAINTAINER := Kultrinhaa_
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_rhode
+PRODUCT_NAME := circle_rhode
 PRODUCT_DEVICE := rhode
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g52
